@@ -10,6 +10,10 @@
     font-size: 18px;
 
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     font-family: 'Noto Sans JP', sans-serif;
@@ -51,6 +55,7 @@
   .heading {
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
+    color: white;
   }
   
   
@@ -317,6 +322,89 @@
       align-items: top;
       display: flex;
     }
+
+
+    /* Keywords*/
+    /* MAIN */
+  
+    .main__content-wrapper {
+      display: grid;
+      grid-template-columns: 75% 1fr;
+    
+      padding-top: 1.5rem;
+      column-gap: 1rem;
+    }
+    
+    
+    .main-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    
+      margin-bottom: 2rem;
+    }
+    
+    
+    .tag-block {
+      display: grid;
+      grid-template-columns: 20% 1fr;
+    
+      border-inline: 1px dotted;
+      padding: 1.5rem;
+      font-weight: 300;
+      color: rgb(255, 253, 253);
+    }
+    
+    
+    .tag-block:nth-child(even) {
+      background-color: #222222;
+    }
+    
+    
+    .tag-block--secret {
+      position: relative;
+    }
+    
+    
+    
+    /* ASIDE */
+    .content-panel {
+      height: fit-content;
+    
+      background-color: #32322f;
+      box-shadow: 0px 0px 3px #ffffff;
+      border-left: 1px solid #fbfbfb;
+    
+      padding: 1em;
+    
+      position: sticky;
+      top: 0px;
+    }
+    
+    
+    .content-panel__list {
+      padding-left: 1.5rem;
+      line-height: 2rem;
+    
+      margin-bottom: 1rem;
+    }
+    
+    
+    .content-panel__title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: rgb(211, 206, 206);
+    }
+    
+    
+    .content-panel__link {
+      color: #ffffff;
+      border-bottom: 1px dotted #a3a3a3;
+      padding-block: 3px;
+    }
+    
+    
+
   
 
   
