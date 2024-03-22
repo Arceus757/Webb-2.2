@@ -16,24 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-
-
-
-
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="burger.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-    <a class="skip-link" href="#content">Ṩ̴͇̖̠̘̉̀̿̕͘̕͝ķ̸͉̥̳̈́̎̀̄͆͘ȋ̷̛̤͛͗͒̀̿̊͊p̴̮͎̤̺̠̲͇̥̻̓̄̇̓̈́͊͊͌͘͠ͅ ̵̢̭̯̈́͋ṯ̸̻̇̓̓͌̆̈́̉̆͑̚ǫ̵̞̪̻̫̈́̔̊ ̴̔͐ͅm̸̡̗̠̰͕̺͍͋̓́͛̎̓̂̌̽̉ͅa̵̧̗̟͖̱͈̝̟̍̉͐̆̚͘i̵͇͈͇͉͑͆̉̐̑̒͊́́̂n̵͍̩̄̓̂̓̂̄̍ ̵̛͍͔̝̮̜̖͔̈́̾͆̀ͅć̴̢̹̣̳͈͎͕͕̱́o̸͉̲͇̤̘̦̻̝͈̠͂̐̍͌ń̵̢͕̠̆͛͑͗͐̅t̶̡͠͝e̸̡̧̛̪̓͌́͂ǹ̷̯̤͙̤͇̺͛̿͆ͅt̸͔̬̟̼͙͇̙͕͓̍͊̓̈́̀̒̿͗̈́
-    </a>
+    <a class="skip-link" href="#content">Skip To Main Content</a>
     <header class="header">
         <div class="header__content-wrapper2">
             <nav class="header-navigation">
-                <ul class="primary-navigation">
+                <ul class="primary-navigation" id="primary-nav">
                     <li class="primary-navigation__item first">
                         <a href="#" class="primary-navigation__link">HEM</a>
                     </li>
@@ -65,15 +60,17 @@
                     <li class="primary-navigation__item">
                         <a href="#" class="primary-navigation__link">GENVÄGAR &#x25BE; </a>
                         <ul class="dropdown">
+                        <span class="menu">
 
                             <li> <a href="https://www.linkedin.com/pulse/say-hello-greet-everyone-greeting-key-communication-vibes-sudhakar"
-                                    target="_blank" DropDownMenu">Hello</a> </li>
+                                    target="_blank" DropDownMenu>Hello</a> </li>
 
                             <li> <a href="https://community.thriveglobal.com/positive-reasons-to-say-good-morning/#:~:text=Our%20self%2Desteem%20is%20massaged,way%20to%20start%20the%20day."
-                                    class="DropDownMenu"> Good morning</a> </li>
+                                    class="DropDownMenu">Good morning</a> </li>
 
                             <li> <a href="https://h-o-m-e.org/good-evening-time/" class="DropDownMenu">Good evening</a>
                             </li>
+                        </span>
 
                         </ul>
                     </li>
@@ -88,20 +85,25 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger" id="burger" aria-label="burger"  aria-expanded="false">
+            <svg class="burgericon" viewbox="0 0 100 100" width="32" height="32">
+                <rect width="90" height="5" x="10" y="30" rx="3"></rect>
+                <rect width="50" height="5" x="50" y="60" rx="3"></rect>
+            </svg>
+            </button>
         </div>
     </header>
     </head>
 
-    <div class="DIV_NAV">
-        <nav class="NAV">
-            <div class="Header-text">
-                <h1 class="HTMLH">HTML HISTORIA</h1>
-                <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque soluta officia d
-                    sunt ex recusandae repudiandae, non ipsum quam eveniet.sit amet consectetur adipisicing elit.
-                    Praesentium debitis consectetur ex accusantium qui laborum vitae cumque.</p>
-            </div>
-            <img src="Images/History-of-HTML.webp" alt="HistoryImage1" class="HTML_Image">
-        </nav>
+    <div class="hero-container">
+        <div class="Header-text">
+            <h1 class="HTMLH">HTML HISTORIA</h1>
+            <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque soluta officia d
+                sunt ex recusandae repudiandae, non ipsum quam eveniet.sit amet consectetur adipisicing elit.
+                Praesentium debitis consectetur ex accusantium qui laborum vitae cumque.</p>
+        </div>
+        
+        <div class="Div-Image"><img src="Images/History-of-HTML.webp" alt="HistoryImage1" class="HTML_Image"></div>
     </div>
 
     <article>
@@ -124,7 +126,10 @@
                     arbetsgrupper att utöka XHTML, under flaggan XHTML Modularization. Samtidigt med detta arbetade W3C
                     också på ett nytt språk som inte var kompatibelt med de tidigare HTML- och XHTML-språken, kallar det
                     XHTML2.
-                    <img src="Images/Programering1.jpg" alt="ProgrameringImage" height="170" width="330">
+                </p>
+                
+                    <img src="Images/Programering1.jpg" class="Programering1" alt="ProgrameringImage" height="170" width="330">
+                <p>
 
 
                     Runt den tid då HTMLs utveckling stoppades 1998 specificerades delar av API:et för HTML utvecklat av
