@@ -21,7 +21,7 @@
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #F7F7F7;
     overflow-x: hidden;
-    background: url(Images/BAckground-black-tample.jpg);
+    background: url(Images/BackgroundG.jpg);
     background-repeat: repeat;
     background-size: auto;
   }
@@ -32,6 +32,39 @@
     color: white;
   }
 
+  /*Main*/
+
+  .baton {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    gap: 1rem;
+  }
+
+
+  .car {
+    background: url(https://64.media.tumblr.com/7e8ae9db7bea740cb8163d05e74ba8f6/tumblr_mgcblsBU641rpdptuo1_r2_500.gif) no-repeat center center/cover;
+  }
+
+  .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    text-size-adjust: 1.5rem;
+    color: #ffffff;
+    font-size: 8rem;
+    font-weight: 600px;
+    padding: 10rem;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: none;
+    border-radius: 10px;
+    }
+    
+    strong {
+      color: #ffffff;
+      font-size: 4.5rem;
+    }
 
 
   /*Images*/
@@ -42,24 +75,26 @@
   }
   .history-image {
     text-align: center;
-    width: 200px;
+    width: 60px;
     height: 63px;
-  }
-
-  .HTML_Image {
-    width: 200px;
-    height: 100px;
   }
   
   .HTML_Image {
     width: 500px;
     height: 200px;
     justify-content: right;
+    opacity: 0.8;
   }
 
   .Image-GG {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 100px;
+  }
+
+  .instagram, .facebook, .twitter {
+    width: 20px;
+    height: 20px;
+    align-items: center;
   }
 
 
@@ -82,7 +117,7 @@
   .header {
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg,#262525, #000000);
+    background: linear-gradient(90deg,#1e1e1e, #000000);
     padding-block: 1rem;
   
     color: rgb(179, 163, 163);
@@ -230,9 +265,9 @@
 
     .hero-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background: rgb(3,2,0);
-    background: linear-gradient(80deg, rgb(0, 0, 0) 16%, rgb(39, 39, 39) 32%, rgb(0, 0, 0) 46%);
+    background: linear-gradient(80deg, rgba(0, 0, 0, 0.419) 16%, rgba(0, 0, 0, 0.408) 46%);
     padding-block: 0.em;
     color: rgb(230, 223, 223);
     align-items: center;
@@ -250,6 +285,7 @@
 
     .Header-text {
       display: grid;
+      width: min(35rem, 90%);
       gap: 25px;
       align-items: center;
       margin: 0px;
@@ -257,10 +293,44 @@
       
     }
 
+    .contact__text {
+      margin: 20px;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .contact__div {
+      display: grid;
+      place-items: center;
+
+      padding-block: 2rem;
+
+      /*
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+      */
+
+    }
+
+    .contact_div {
+      margin: 20px;
+      padding: 25px;
+    }
+
+    .contact__label {
+      font-size: small;
+      margin: 25px;
+      padding: 20px;
+      color: azure;
+    }
+
     .COLUMS {
       padding-inline: 2;
       columns: 2;
       column-gap: 2.3 rem;
+      margin-inline: 3rem;
     }
 
     .HT {
@@ -270,6 +340,7 @@
        font-family: 'Playfair Display', serif;
 
     }
+
 
     .HTMLH {
       font-size: 1.1rem;
@@ -336,7 +407,7 @@
     .skip-link {
       background: green;
       padding: 0.5rem 1.5rem;
-      border-radius: 0 0 0.25 0.25rem ;
+      border-radius: 0 0 0.25 0.25rem;
       position: fixed ;
       top: 0;
       left: 0.5rem;
@@ -352,7 +423,7 @@
 
     /* Footer */
     .footer {
-      background-color: #000000;
+      background-color: #0000008c;
       color: #fff;
       text-align: center;
       padding: 20px;
@@ -360,12 +431,27 @@
       width: 100%;
     }
 
+    .footer-content {
+      display: grid;
+      justify-content: center;
+    }
+
+
+    .icons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+    }
+
     .footer-text {
       margin-bottom: 10px;
     }
 
     .footer-button {
-      display: inline-block;
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
       padding: 10px 20px;
       background-color: #403e3e;
       color: #fff;
@@ -431,8 +517,8 @@
     /* ASIDE */
     .content-panel {
       height: fit-content;
-    
-      background-color: #32322f;
+      backdrop-filter: blur(15px);
+      background-color: transparent;
       box-shadow: 0px 0px 3px #ffffff;
       border-left: 1px solid #fbfbfb;
     
@@ -551,8 +637,191 @@
           color: rgb(255, 255, 255);
           
       }
+
+      .HTP {
+        font-size: 0.8rem;
+      }
   }
 
-  
+  /*Forms*/
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+  }
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: none;
+    background-position: center;
+    background-size: cover;
+  }
 
+  .form-box{
+    position: relative;
+    width: 400px;
+    height: 650px;
+    border: 2px solid #d1d0d0;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+
+  }
+
+  .inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+  }
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+  }
+  .inputbox input{
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 5px;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .inputbox ion-icon{
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;;
+  }
+
+  .forget{
+    margin: -15px 0 15px;
+    color: #fff;
+    text-align: right;
+    text-decoration: none;
+    font-size: .9em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .forget label input{
+    margin-right: 3px;
+  }
+
+  .forget label a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .forget label a:hover{
+    text-decoration: underline;
+  }
+  button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    background: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+  }
+  .register p a{
+    text-decoration:none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .register p a:hover{
+    text-decoration: underline;
+  }
+
+  .form-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .formuler {
+    color: rgb(203, 203, 165);
+    background: transparent;
+    border: 0.4px solid #ffffff;
+    border-radius: 0%;
+    
+    
+  }
+
+  .send {
+    color: rgb(203, 203, 165);
+    background: #00ff99;
+    animation: color-change 5s infinite;
+  }
+
+
+  .message-input {
+
+    resize: vertical;
+    min-height: 10vh;
+    padding: 1rem;
+
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+
+
+  .message-input::placeholder {
+    color: #d8d6d6;
+  }
+  
+@keyframes color-change {
+  0% {
+    background-color: #456a09;
+  }
+  25% {
+    background-color: #970897;
+  }
+  50% {
+    background-color: #0606ae;
+  }
+  75% {
+    background-color: #27055d;
+  }
+  100% {
+    background-color: #3b5e04;
+  }
+}
   
