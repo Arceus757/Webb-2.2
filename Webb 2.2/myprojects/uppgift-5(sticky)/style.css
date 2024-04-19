@@ -1,0 +1,81 @@
+.list-header {
+    position: relative;
+  }
+  
+  @supports (position: sticky) {
+    .list-header {
+      position: sticky;
+      top: 0;
+    }
+  }
+  
+  
+  /* Background Styles Only */
+  
+  body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  html {
+    height: 300%;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  .header-large {
+    color: #1293ea;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .main-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(51, 51, 51);
+    padding: 5px;
+    color: #0681df;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .list-content {
+    padding: 10px 20px;
+  }
+  
+  .list-header {
+    background-color: #000000;
+    color: #00aaff;
+    padding: 10px;
+    font-weight: 750;
+    font-size: 30px;
+  }
+  
+  #invisible-image {
+    position: absolute;
+
+    opacity: 0; /* Gör bilden osynlig */
+}
+
+#invisible-image:hover {
+    opacity: 1; /* Visa bilden när musen förs över den */
+}
+.container {
+    bottom: 0;
+}
+  
+  

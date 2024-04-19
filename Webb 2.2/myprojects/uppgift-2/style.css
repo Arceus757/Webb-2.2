@@ -1,0 +1,20 @@
+.GGWP {
+    display: block;
+   border: 20px outset rgb(4, 93, 125);
+   background-color: lightblue;
+    text-align: center;
+}
+
+.GG {
+    display: block;
+  border: 20px outset rgb(122, 131, 3);
+  background-color: lightblue;
+  text-align: center;
+}
+
+.WP {
+    display: block;
+  border: 20px outset rgb(122, 4, 4);
+  background-color: lightblue;
+   text-align: center;
+  }

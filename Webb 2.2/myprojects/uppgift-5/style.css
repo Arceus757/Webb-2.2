@@ -1,0 +1,46 @@
+.parent {
+    background: rgb(10, 116, 214);
+    width: 170vh;
+    height: 20vw;
+    padding: 2em;
+    position: relative;
+}
+
+.Child-one {
+    background: aqua;
+    position: end;
+    width: 160vh;
+    height: 3vw;
+    padding: 1em;
+}  
+
+.Child-two {
+    background: beige;
+    width: 160vh;
+    height: 3vw;
+    padding: 1em;
+}
+
+.Child-three {
+    background: azure;
+    width: 20vh;
+    height: 2vw;
+    padding: 1em;
+    position: fixed;
+    top: 0px;
+    right: 0;
+
+}
+
+#invisible-image {
+    position: absolute;
+
+    opacity: 0; /* Gör bilden osynlig */
+}
+
+#invisible-image:hover {
+    opacity: 1; /* Visa bilden när musen förs över den */
+}
+.container {
+    bottom: 0;
+}

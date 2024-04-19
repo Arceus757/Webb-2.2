@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #F7F7F7;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.heading {
+  font-family: 'Dancing Script', cursive;
+  text-transform: uppercase;
+}
+
+
+.content-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+
+/* HEADER */
+.header {
+  background: linear-gradient(90deg,#0a754c, #3b178f);
+  padding-block: 1.9em;
+
+  color: white;
+}
+
+
+.header__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header__main-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+.primary-navigation {
+  list-style-type: none;
+
+  display: flex;
+  gap: 1rem;
+}
+
+
+.primary-navigation__item {
+  font-family: 1.1rem;
+  position: relative;
+}
+
+
+/* hover underline */
+.primary-navigation__item::after {
+  content: "";
+  background-color: #90c977;
+
+  height: 5px;
+  width: 0%;
+
+  position: absolute;
+  left: 50%;
+  bottom:-6px;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity .1s ease-in, width .2s ease-out;
+}
+
+
+.primary-navigation__item:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+
+/* MAIN */
+.main__content-wrapper {
+  display: grid;
+  grid-template-columns: 75% 1fr;
+
+  padding-top: 1.5rem;
+  column-gap: 1rem;
+}
+
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+
+
+.tag-block {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+
+  border-inline: 1px dotted;
+  padding: 1.5rem;
+  font-weight: 300;
+}
+
+
+.tag-block:nth-child(even) {
+  background-color: #e1e3e1;
+}
+
+
+.tag-block--secret {
+  position: relative;
+}
+
+.tag-block--secret:hover .tag-block__easter-egg {
+  opacity: 1;
+  transform: translateX(-50px);
+}
+
+
+/* ASIDE */
+.content-panel {
+  height: fit-content;
+
+  background-color: #FEFEFE;
+  box-shadow: 0px 0px 3px #e1e1e1;
+  border-left: 1px solid #1286e5;
+
+  padding: 1em;
+
+  position: sticky;
+  top: 0px;
+}
+
+
+.content-panel__list {
+  padding-left: 1.5rem;
+  line-height: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+
+.content-panel__title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+.content-panel__link {
+  color: #106dee;
+  border-bottom: 1px dotted #a3a3a3;
+  padding-block: 3px;
+}
+
+
+.content-panel__link:hover {
+  border-bottom: 1px solid #0e653c;
+  color: #16d3f9;
+  background: linear-gradient(1000deg,#c7c4f1, transparent);
+}

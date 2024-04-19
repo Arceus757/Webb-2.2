@@ -1,0 +1,55 @@
+html {
+    height: 100%;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    background-size: cover;
+    background-image: url(bambo75.jpg)
+}
+.parent {
+    background-color: rgb(229, 218, 240);
+    height: 400px;
+    width: 400px;
+    border: solid 2px;
+    border-color: rgb(5, 87, 87);
+}
+
+.child {
+    background-color: rgb(7, 126, 7);
+    height: 50%;
+    width: 50%;
+    transition: transform 1s ease-in;
+
+    display: grid;
+    place-items: center;
+}
+
+.parent:hover .child {
+    background-color: rgb(224, 103, 103);
+    transform: translateX(100%);
+    animation: left-to-right 1s ease-in forwards infinite alternate;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes left-to-right  {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateY(100%);
+    }
+
+    66% {
+        transform: translateX(100%) translateY(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
